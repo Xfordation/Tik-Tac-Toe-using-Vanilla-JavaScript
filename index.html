@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <!-- Responsive Layout -->
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="./CSS/responsive.css"
+    />
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awsome -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favion Link -->
+    <link rel="shortcut icon" type="image/x-icon" href="./Img/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tick-Tac-Toe | Rosesso</title>
+  </head>
+  <nav class="navbar">
+    <h2 class="nav-header">Tik-Tac-Toe</h2>
+    <button class="btn btn-dark" id="reset">Reset</button>
+  </nav>
+  <body>
+    <!-- Select Option -->
+    <div class="select" id="select">
+      <button class="btn btn-light" id="player1">
+        <i class="fa fa-circle-o fa-lg"></i>
+      </button>
+      <h2>Player <span id="turnStat"></span> its your turn</h2>
+      <button class="btn btn-light" id="player2">
+        <i class="fa fa-close fa-lg"></i>
+      </button>
+    </div>
+
+    <!-- Game Box -->
+    <section class="container-out" id="gamebox">
+      <div class="container-in">
+        <div class="table-container">
+          <table id="main-box">
+            <tr>
+              <td class="boxes"><div class="box" id="box1"></div></td>
+              <td class="boxes"><div class="box" id="box2"></div></td>
+              <td class="boxes"><div class="box" id="box3"></div></td>
+            </tr>
+            <tr>
+              <td class="boxes"><div class="box" id="box4"></div></td>
+              <td class="boxes"><div class="box" id="box5"></div></td>
+              <td class="boxes"><div class="box" id="box6"></div></td>
+            </tr>
+            <tr>
+              <td class="boxes"><div class="box" id="box7"></div></td>
+              <td class="boxes"><div class="box" id="box8"></div></td>
+              <td class="boxes"><div class="box" id="box9"></div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Result Declartion -->
+    <section class="result-dec" id="result-dec">
+      <h1 id="result"></h1>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <p class="ft">
+        Tik-Tac-Toe <br />Made By:<strong>Xfordation</strong> &copy
+      </p>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="JS/winner.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>

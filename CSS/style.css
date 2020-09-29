@@ -1,0 +1,160 @@
+/* Root Variables */
+:root {
+  --primary--color: #ddd;
+  --secondary--color: #1c1c1e;
+  --dark--color: #333;
+  --light--color: #fefefe;
+}
+/* Setting to Null */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Basic Elements */
+body {
+  font-family: "Nunito Sans";
+  line-height: 1.5;
+  background-color: var(--primary--color);
+}
+
+/* Utility Classes */
+.btn {
+  width: 15%;
+  text-align: left;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+.btn-light {
+  background-color: #eee;
+  border: none;
+  border-bottom: 5px solid rgba(51, 51, 51, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all ease-in-out 0.5s;
+  border-bottom: 4px solid #e91e63;
+}
+.btn-dark {
+  background-color: var(--dark--color);
+  border: 2px solid #8125e2;
+  color: #eee;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all ease-in-out 0.5s;
+}
+.btn-dark:hover {
+  background-color: #8125e2;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--dark--color);
+  padding: 1.5rem;
+  color: var(--primary--color);
+  text-align: center;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.nav-header {
+  margin-top: 10px;
+}
+
+/* Select Option */
+.select {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* Game Box */
+.container-out {
+  padding: 1rem 0;
+}
+.container-in {
+  width: 98%;
+  margin: auto;
+}
+.table-container {
+  margin: auto;
+  text-align: center;
+}
+.box {
+  min-width: 150px;
+  min-height: 70px;
+  text-align: center;
+  vertical-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  cursor: pointer;
+}
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+td {
+  border: 6px solid rgba(51, 51, 51, 0.5);
+}
+td:after {
+  content: "";
+  display: block;
+  margin-top: 50%;
+  text-align: center;
+}
+td:first-of-type {
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+td:nth-of-type(2) {
+  border-top-color: transparent;
+}
+td:nth-of-type(3) {
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+tr:nth-of-type(3) td {
+  border-bottom-color: transparent;
+}
+.box:hover {
+  opacity: 0.7;
+}
+.fa-close-color {
+  color: #ff0055;
+}
+.fa-circle-color {
+  color: #0033ff;
+}
+
+/* Result Declaration */
+.result-dec {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 5rem;
+  cursor: pointer;
+  display: none;
+  transition: all ease-in-out 1s;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--secondary--color);
+  color: #fefefe;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border: 0px;
+  position: relative;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.ft {
+  background-color: var(--dark--color);
+  color: #ddd;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
