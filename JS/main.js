@@ -1,7 +1,7 @@
 /**
- * Tik-Tac-Toe
- * v 1.0
- * Author: Xfordation
+ * @name Tik-Tac-Toe
+ * @version 1.0
+ * @author Xfordation
  */
 
 // Game Initializer
