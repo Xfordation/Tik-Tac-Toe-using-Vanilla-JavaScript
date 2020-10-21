@@ -24,7 +24,6 @@ const gameInit = function () {
           // Winner Object
           const win = new getWinner();
           win.isWin();
-          // console.log(win.getWinnerVertically());
         }
       });
     });
